@@ -1,0 +1,7 @@
+mkdir -p extracted
+unzip -o AF-Market-Mobile-APK-Build.zip -d extracted
+cp -a extracted/. .
+rm -rf extracted AF-Market-Mobile-APK-Build.zip
+git add -A
+git commit -m "Prepare AF Market Android build"
+git push
